@@ -17,7 +17,15 @@
             <li>Каталог</li>
             <li class="logo_pc"><a href="{{ asset ("")}}"><img src="{{ asset("img/logo.png") }}" alt=""></a></li>
             <li>Магазин</li>
-            <li class="login"><a href="">Войти</a></li>
+            <li class="login"><a href="/register">
+              @auth
+                    {{ Auth::user()->name }}
+                @endauth
+            
+                @guest
+                    Войти
+                @endguest
+              </a></li>
         </ul>
 
         <a id="menu" onclick="click1()" class="burger-menu_button">
