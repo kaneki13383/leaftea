@@ -1,0 +1,287 @@
+/*Шапка сайта*/
+header{
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+}
+.navigation{
+    display: flex;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 1.5vw;
+    font-family: 'Comfortaa', cursive;
+}
+.navigation a{
+    color: white;
+}
+/*Конец шапки сайта*/
+
+.under_header{
+    /* position: relative; */
+    padding-top: 10vh;
+    background-image: url('../img/image9.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.under_header h1{
+    color: white;
+    font-family: 'Gluten', cursive;
+    font-size: 4vw;
+    margin-top: 15vh;
+    margin-left: 25vw;
+}
+.under_header h2{
+    color: white;
+    font-family: 'Gluten', cursive;
+    font-size: 4vw;
+    margin-top: 10vh;
+    margin-left: 50vw;
+}
+
+/*Секция о нас*/
+h3{
+    color: white;
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 8vw 0;
+    font-family: 'Comfortaa', cursive;
+}
+h3 span{
+    color: #9FC926;
+}
+.text_one{
+    width: 23vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.text_one p{
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Philosopher', sans-serif;
+    padding-bottom: 6vh;
+}
+.text_two{
+    width: 23vw;
+}
+.text_two p{
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Philosopher', sans-serif;
+    padding-top: 6vh;
+}
+.d-f{
+    display: flex;
+    justify-content: space-evenly;
+}
+/*Секция о нас*/
+/*Секция топ товары*/
+.top_tovar{
+    display: flex;    
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.tovar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 6rem;
+}
+.tea{
+    background-color: #191D21;
+    box-shadow: black 14px 14px 8px 4px;
+    width: 350px;
+    height: 420px;
+    color: white;
+}
+.info_tea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vw;
+    font-family: 'Comfortaa', cursive;
+    margin-top: -5vw;
+}
+.info_tea h4{
+    font-size: 1.25vw;
+}
+.info_tea p{
+    font-size: 1vw;
+}
+.info_tea button{
+    width: 180px;
+    height: 50px;
+    text-decoration: none;
+    background-color: transparent;
+    border: #9FC926 2px solid;
+    color: white;
+    font-size: 1.2vw;
+    font-family: 'Philosopher', sans-serif;
+}
+.info_tea button:hover{
+    background-color: #9FC926;
+    color: #191D21;
+    transition-duration: 0.5s;
+}
+.butt_more{
+    margin-top: 10vh;
+    width: 180px;
+    height: 50px;
+    text-decoration: none;
+    background-color: transparent;
+    border: #9FC926 2px solid;
+    color: white;
+    font-size: 1.2vw;
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 5vh;
+}
+.butt_more:hover{
+    background-color: #9FC926;
+    color: #191D21;
+    transition-duration: 0.5s;
+}
+/*Секция топ товар*/
+/*Подписаться*/
+.subscribe{
+    background-image: url('../img/image 21.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form h5{
+    color: white;
+    font-size: 1.6vw;
+    font-family: 'Comfortaa', cursive;
+    width: 30vw;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: white 2px solid;
+    outline: none;
+    width: 25vw;
+    height: 50px;
+    color: white;
+    padding: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form button{
+    width: 25vw;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2vw;
+    font-family: 'Philosopher', sans-serif;
+    border: white 2px solid;
+    margin-top: 5vh;
+}
+form button:hover{
+    background-color: white;
+    color: #191D21;
+    transition-duration: 0.5s;
+}
+/*Подписаться*/
+/*Отзывы*/
+.orders{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.order{
+    width: 550px;
+    height: 200px;
+    margin: 10px;
+    background-color: #191D21;
+    box-shadow: black 14px 14px 8px 4px;
+    color: white;
+    display: flex;
+}
+.order img{
+    object-fit: cover;
+    translate: -1vw -1vw;
+    width: 150px;
+    height: 150px;
+}
+.comm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.comm h5{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2vw;
+}
+.comm p{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 0.9vw;
+}
+/*Отзывы*/
+/*Footer*/
+.navigation_footer{
+    display: flex;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 1.5vw;
+    font-family: 'Comfortaa', cursive;
+}
+footer{
+    height: 100%;
+    background-color: #191D21;
+    border-top: #9FC926 2px solid;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .navigation_footer{
+    padding-top: 5vh;
+    width: 100%;
+}
+footer a{     
+    color: #938C8C;
+    font-size: 1.2vw;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 2.5vh;
+}
+.cop{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2vw;
+    border-top: #938C8C 2px solid;
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+/*Footer*/
+
+
+
+

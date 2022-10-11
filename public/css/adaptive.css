@@ -1,0 +1,514 @@
+.logo_mobile{
+    display: none;
+}
+
+.mobile_footer{
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #212529;
+}
+/*Планшет и ноутбук*/
+@media screen and (max-width: 1500px) {
+    .d-f{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+    }
+    .text_one{
+        justify-content: center;
+    }
+    .text_one div p{
+        text-align: center;
+    }
+    .text_one div img{
+        width: 400px;
+    }
+    .text_two img{
+        width: 400px;
+    }
+    .text_two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 5vw;
+    }
+    .text_two p{
+        text-align: center;
+    }
+    .orders{
+        gap: 3vw;
+    }
+    .order img{        
+        translate: -2vw -2vw;
+    }
+    .comm h5{
+        font-size: 2vw;
+    }
+    .comm p{
+        font-size: 1.2vw;
+    }
+    .info_tea img{
+        margin-top: -2vw;
+    }
+    .info_tea h4{
+        font-size: 2vw;
+    }
+    .info_tea p{
+        font-size: 1.5vw;
+    }
+    .info_tea button{
+        font-size: 1.5vw;
+    }
+    .butt_more{
+        font-size: 1.5vw;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .under_header{
+        padding-top: 25vh;
+    }
+    .text_one p{
+        font-size: 2vw;
+    }
+    .text_two p{
+        font-size: 2vw;
+    }
+    .tovar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    h3{
+        margin-top: 15vh;
+    }
+    .block div img{
+        display: none;
+    }
+    .subscribe{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .block{
+        justify-content: center;
+        margin-top: 10vw;
+    }
+    .subscribe{
+        height: 55vh;
+    }
+    form input{
+        width: 400px;
+    }
+    .form div h5{
+        width: 100%;
+        font-size: 2vw;
+    }
+    form button{
+        width: 400px;
+        font-size: 1.8vw;
+    }
+    .info_tea button{
+        font-size: 1.8vw;
+    }
+    .butt_more{
+        font-size: 1.8vw;
+    }    
+    .comm h5{
+        font-size: 2.5vw;
+    }
+    .comm p{
+        font-size: 1.8vw;
+    }
+    .navigation li{
+        font-size: 1.8vw;
+    }
+    footer a{
+        font-size: 1.5vw;
+    }
+    .cop p{
+        font-size: 1.8vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navigation{
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        backdrop-filter: blur(5px);
+        background-color: #000000b6;
+        height: 90vh;
+    }
+    .login{
+        margin-top: 25vw;
+    }
+    .navigation li{
+        font-size: 5vw;
+    }
+    .burger-menu_button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 30;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+    }
+    .burger-menu_lines::before,
+    .burger-menu_lines::after,
+    .burger-menu_lines {
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #9FC926;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    }
+    .burger-menu_lines {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+      .burger-menu_lines::before {
+        content: '';
+        top: -12px;
+    }
+      .burger-menu_lines::after {
+        content: '';
+        top: 12px;
+    }
+      .logo_mobile{
+        display: block;
+        margin: 2vw 2vw;
+    }
+    .logo_pc{
+        display: none;
+    }
+    h3{
+        font-size: 4.5vw;
+    }
+    .under_header h1{
+        font-size: 6.5vw;
+        margin-left: 10vw;
+    }
+    .under_header h2{
+        font-size: 6.5vw;
+        margin-left: 30vw;
+    }
+    .text_one{
+        width: 70vw;
+    }
+    .text_two{
+        width: 70vw;
+    }
+    .text_one div p{
+        width: 60vw;
+        font-size: 3vw;
+    }
+    .text_two p{
+        width: 60vw;
+        font-size: 3vw;;
+    }
+    .info_tea{
+        margin-top: -10vw;
+        gap: 3vw;
+    }
+    .butt_more{
+        font-size: 2.5vw;
+    }
+    .info_tea h4{
+        font-size: 3vw;
+    }
+    .info_tea p{
+        font-size: 2.5vw;
+    }
+    .info_tea button{
+        font-size: 2.5vw;
+    }
+    .form div h5{
+        font-size: 3vw;
+    }
+    form button{
+        font-size: 2.5vw;
+    }
+    .comm h5{
+        font-size: 3.5vw;
+    }
+    .comm p{
+        font-size: 2.3vw;
+    }
+    .orders{        
+        gap: 10vw;
+    }
+    .order img{
+        translate: -4vw -4vw;
+    }
+    .navigation_footer li img{
+        width: 25vw;
+        display: none;
+    }
+    .navigation_footer li{
+        font-size: 3vw;
+    }  
+    .mobile_footer{
+        display: block;
+        margin-top: 5vw;
+    }
+    footer a{
+        font-size: 3vw;
+    }
+    .cop p{
+        font-size: 3vw;
+    }
+}
+/*Планшет и ноутбук*/
+/*доделать бургер меню для планшета*/
+
+/*телефон*/
+@media screen and (max-width: 425px) {
+    .d-f{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2vw;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+    h3{
+        font-size: 7vw;
+    }
+    .text_one div p {
+        width: 90vw;
+        font-size: 4.2vw;
+    }
+    .text_two p {
+        width: 90vw;
+        font-size: 4.5vw;
+    }
+    .info_tea{
+        margin-top: -20vw;
+        gap: 5vw;
+    }
+    .butt_more{
+        font-size: 5vw;
+    }
+    .info_tea h4{
+        font-size: 5vw;
+    }
+    .info_tea p{
+        font-size: 4vw;
+    }
+    .info_tea button{
+        font-size: 4vw;
+    }
+    .form div h5{
+        font-size: 5vw;  
+        width: 90vw; 
+    }
+    form button{
+        font-size: 4vw;
+    }
+    .comm h5{
+        font-size: 6vw;
+    }
+    .comm p{
+        font-size: 3.5vw;
+    }
+    .order img{
+        translate: -6vw -6vw;
+    }
+    .top_tovar h3{
+        translate: 0vw -20vw;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .logo_mobile{
+        width: 220px;
+        margin-top: 5vw;
+    }
+    .text_one div img{
+        width: 65vw;
+    }
+    .text_two img{
+        width: 65vw;
+    }
+    .tea{
+        width: 90vw;
+    }
+    .info_tea img{
+        width: 310px;
+    }
+    form input{
+        width: 70vw;
+    }
+    form button{
+        width: 70vw;
+    }
+    .navigation_footer li{
+        font-size: 3.5vw;
+    }
+    footer a{
+        font-size: 3.5vw;
+    }
+    .cop p{
+        font-size: 3.5vw;
+    }
+}
+/* КОНЕЦ АДАПТИВА ГЛАВНАЯ*/
+/*-------------------------*/
+
+/*НАЧАЛО АДАПТИВА КАТАЛОГ*/
+/*Catalog adaptive*/
+@media screen and (max-width: 1500px) {
+    
+    .sales{
+        flex-wrap: wrap;
+        gap: 5vw;
+    }
+    .sales__cont{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 7.6vw;
+        width: 100%;
+    }
+    .chainik{
+        width: 100%;
+    }
+    .sales1{
+        width: 1123px;
+    }
+    .sales_more1{
+        padding: 5px;
+        font-size: 28px;
+    }
+    .info_tea h4{
+        font-size: 1.7vw;
+    }
+    .tovar{
+        justify-content: center;
+    }
+    .info_tea h4{
+        font-size: 1.7rem;
+    }
+    .info_tea p{
+        font-size: 1.3rem;
+    }
+    .info_tea button, .butt_more{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .sales1{
+        width: 80vw;
+        z-index: -1;
+    }
+    .sale{
+        width: 80vw;
+        z-index: -1;
+    }
+    .sale img{
+        width: 80vw;
+        z-index: -1;
+    }
+    .sales_stuff .stuff_desc{
+        font-size: 32px;
+    }
+    .sales_more1
+    {
+        padding: 10px;
+        font-size: 32px;
+    }
+    .catalog h3,  .tovar_info h3, .top_tovar h3{
+        margin: 5vw 0vw;
+    }
+    .stuff_text{
+        font-size: 2vw;
+    }
+    .catalog_stuff{
+        margin-top: -3vw;
+    }
+}
+@media screen and (max-width: 768px){
+    .stuff_text{
+        font-size: 3vw;
+
+    }
+    .catalog_stuff{
+        margin-top: -4vw;
+    }
+    .catalog h3,  .tovar_info h3{
+        margin: 15vw 0vw;
+    }
+    .tovar
+    {
+        margin-top: 7vw;
+    }
+}
+@media screen and (max-width: 425px){
+    .info_catalog img{
+        max-width: 90vw;
+    }
+    .stuff_text{
+        font-size: 5vw;
+    }
+    .catalog_stuff{
+        margin-top: -7vw;
+    }
+    .catalog h3,  .tovar_info h3{
+        margin: 10vw 0vw;
+    }
+    .sales_more, .sales_more1{
+        display: none;
+    }
+    .sales_stuff .stuff_desc{
+        font-size: 32px;
+    }
+    .catalog_img{
+        gap: 7vw;
+    }
+    .info_tea h4{
+        text-align: center;
+    }
+    .top_tovar{
+        margin-top: 30vw;
+    }
+}
+/*КОНЕЦ АДАПТИВА КАТАЛОГ*/
+/*-------------------------*/
+
+/*НАЧАЛО АДАПТИВА О НАС*/
+@media screen and (max-width: 1100px) {
+    .info_where_we{
+        align-items: center;
+        flex-direction: column;
+        gap: 5vw;
+    }
+}
+@media screen and (max-width: 615px) {
+    iframe{
+        width: 80vw;
+    }
+}

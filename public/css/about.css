@@ -1,0 +1,136 @@
+body {
+    background-color: #212529;
+  }
+/*Шапка сайта*/
+header{
+    height: 10vh;
+    width: 100%;
+    border-bottom: #9FC926 2px solid;
+}
+.navigation{
+    display: flex;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 1.5vw;
+    font-family: 'Comfortaa', cursive;
+}
+.navigation a{
+    color: white;
+}
+/*Конец шапки сайта*/
+
+/*Секция о нас*/
+.about{
+    border-bottom: #9FC926 3px solid;
+    padding-bottom: 5vw;
+}
+h3{
+    color: white;
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 8vw 0;
+    font-family: 'Comfortaa', cursive;
+}
+h3 span{
+    color: #9FC926;
+}
+.text_one{
+    width: 23vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.text_one p{
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Philosopher', sans-serif;
+    padding-bottom: 6vh;
+}
+.text_two{
+    width: 23vw;
+}
+.text_two p{
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Philosopher', sans-serif;
+    padding-top: 6vh;
+}
+.d-f{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Секция о как найти нас?*/
+h3{
+    color: white;
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 8vw 0;
+    font-family: 'Comfortaa', cursive;
+}
+h3 span{
+    color: #9FC926;
+}
+.info_where_we{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.info_where_we div p{
+    border-bottom: #9FC926 2px solid;
+    margin-top: 2vw;
+}
+
+/*Секция о как найти нас?*/
+
+
+/*Footer*/
+.navigation_footer{
+    display: flex;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 1.5vw;
+    font-family: 'Comfortaa', cursive;
+}
+footer{
+    height: 100%;
+    background-color: #191D21;
+    border-top: #9FC926 2px solid;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .navigation_footer{
+    padding-top: 5vh;
+    width: 100%;
+}
+footer a{     
+    color: #938C8C;
+    font-size: 1.2vw;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 2.5vh;
+}
+.cop{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2vw;
+    border-top: #938C8C 2px solid;
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+/*Footer*/
