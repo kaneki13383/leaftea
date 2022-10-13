@@ -7,7 +7,7 @@
         <!-- Validation Errors -->
 
         <form method="POST" action="{{ route('register') }}">
-            
+            {{ csrf_field() }}
             <!-- Name -->
             <div>
                 <x-label for="name" :value="__('Name')" />

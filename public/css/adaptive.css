@@ -173,14 +173,14 @@ body{
     .burger-menu_lines::before,
     .burger-menu_lines::after,
     .burger-menu_lines {
-    position: absolute;
-    width: 50px;
-    height: 3px;
-    background-color: #9FC926;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        background-color: #9FC926;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
     }
     .burger-menu_lines {
         top: 50%;
