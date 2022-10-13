@@ -1,55 +1,71 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            
-        </x-slot>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset("css/register.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/adaptive.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/fonts.css") }}">
+    <title>Регистрация</title>
+</head>
+<body>
+    <x-guest-layout>
+        <x-auth-card>
+            <x-slot name="logo">
 
-        <!-- Validation Errors -->
+            </x-slot>
 
-        <form method="POST" action="{{ route('register') }}">
-            
-            <!-- Name -->
-            <div>
-                <x-label for="name" :value="__('Name')" />
+            <!-- Validation Errors -->
+            <div class="form">
+                
+                <form method="POST" action="{{ route('register') }}">
+                    
+                @csrf
 
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+                    <div>
+                        <h1>Регистрация</h1>
+                    </div>
+                    <!-- Name -->
+                    <div class="info_name">
+                        
+                        <x-input id="name"  class="block mt-1 w-full" type="text" name="name" placeholder="Введите имя" :value="old('name')" required autofocus />
+                     </div>
+
+                    <!-- Email Address -->
+                     <div class="info_email">
+                     <x-input id="email" class="block mt-1 w-full" type="email" name="email" placeholder="Введите почту" :value="old('email')" required />
+                    </div>
+
+                    <!-- Password -->
+                    <div class="info_password">
+                        
+                        <x-input id="password" class="block mt-1 w-full" type="password" name="password" placeholder="Введите пароль" required autocomplete="new-password" />
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="info_confirm_passord">
+                        <x-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" placeholder="Введите пароль еще раз" required />
+                    </div>
+
+                    <div class="info_link">
+                        <x-button>
+                            {{ __('Зарегистрироваться') }}
+                        </x-button>
+                    </div>
+                    <div>
+                    <a class="info_link_text" href="{{ route('login') }}">
+                            {{ __('Уже зарегистрирован?') }}
+                        </a>
+                    </div>
+                    <div>
+                    <a class="info_link_text">
+                            {{ __('Политика конфиденциальности') }}
+                        </a>
+                    </div>
+                </form>
             </div>
-
-            <!-- Email Address -->
-            <div class="mt-4">
-                <x-label for="email" :value="__('Email')" />
-
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-            </div>
-
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
-
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="new-password" />
-            </div>
-
-            <!-- Confirm Password -->
-            <div class="mt-4">
-                <x-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                <x-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-button class="ml-4">
-                    {{ __('Register') }}
-                </x-button>
-            </div>
-        </form>
-    </x-auth-card>
-</x-guest-layout>
+        </x-auth-card>
+    </x-guest-layout>
+</body>
+</html>
