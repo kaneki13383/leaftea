@@ -141,6 +141,7 @@ body{
     .cop p{
         font-size: 1.8vw;
     }
+    
 }
 @media screen and (max-width: 768px) {
     .navigation{

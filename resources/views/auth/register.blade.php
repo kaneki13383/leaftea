@@ -13,9 +13,13 @@
     <x-guest-layout>
         <x-auth-card>
             <x-slot name="logo">
-
+                <div class="logo">
+                    <a href="/">
+                        <img src="{{ asset("img/logo.png")}}" alt="">
+                    </a>
+                </div>                
             </x-slot>
-
+            
             <!-- Validation Errors -->
             <div class="form">
                 
