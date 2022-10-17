@@ -7,7 +7,7 @@ body{
 a, button, iframe:hover{
     cursor: url("../img/NeonLinkSelect06-Green.cur"), auto;
 }
-textarea, input:hover{
+textarea, input, p, h1,h2,h3,h4,h5:hover{
     cursor: url("../img/NeonTextSelect06-Green.cur"), auto;
 }
 body::-webkit-scrollbar {
