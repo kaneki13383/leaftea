@@ -14,10 +14,10 @@ body::-webkit-scrollbar {
     width: 12px;               
   }
   body::-webkit-scrollbar-track {
-    background: #9FC926;        
+    background: #191D21;        
   }
   body::-webkit-scrollbar-thumb {
-    background-color: #191D21;    
+    background-color:  #191D21;    
     border-radius: 20px;       
     border: 3px solid #9FC926;  
   }
