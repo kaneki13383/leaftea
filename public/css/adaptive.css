@@ -1,7 +1,26 @@
 .logo_mobile{
     display: none;
 }
-
+body{
+    cursor: url("../img/NeonCursor06-Green.cur"), auto;
+}
+a, button, iframe:hover{
+    cursor: url("../img/NeonLinkSelect06-Green.cur"), auto;
+}
+textarea, input:hover{
+    cursor: url("../img/NeonTextSelect06-Green.cur"), auto;
+}
+body::-webkit-scrollbar {
+    width: 12px;               
+  }
+  body::-webkit-scrollbar-track {
+    background: #9FC926;        
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #191D21;    
+    border-radius: 20px;       
+    border: 3px solid #9FC926;  
+  }
 .mobile_footer{
     display: none;
 }

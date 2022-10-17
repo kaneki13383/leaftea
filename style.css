@@ -1,0 +1,57 @@
+.text {
+background-color:  #b4bda0; 
+height: 700px;
+width: 700px;
+border:50px; solid:#847AAE;
+text-align: right;
+font-size: 25px;
+line-height: 32px;
+font-family: Courier New ;
+
+}
+.g1 {
+font-weight:bold;
+font-style:italic;
+color:blue;
+}
+.g2 { 
+color: brown;
+}
+.g3{
+font-size: medium;
+color:green;
+
+}
+.g4{
+font-weight:bold;
+font-style:italic;
+color: goldenrod;
+}
+.g5 {
+    text-decoration:underline;
+    color: black;
+
+}
+
+table{
+border: 10px solid #878288;
+background-color:#F6B7B2 ;
+}
+.tr{
+vertical-align: center;
+color: azure
+}
+.tr1{
+    vertical-align:left;
+    color: azure;
+}
+.tr2{
+color: azure;
+vertical-align: center;
+}
+.tr3{
+color: azure;
+vertical-align:right;
+}
+
+

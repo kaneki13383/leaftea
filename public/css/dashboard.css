@@ -1,0 +1,174 @@
+
+/*Шапка сайта*/
+header{
+    height: 10vh;
+    width: 100%;
+}
+.navigation{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 1.5rem;
+    font-family: 'Comfortaa', cursive;
+    border-bottom: 2px solid #9FC926;
+}
+.navigation a{
+    color: white;
+}
+/*Конец шапки сайта*/
+.subscribe{
+    border-bottom: #9FC926 2px solid;
+}
+.info_about{
+    display: flex;
+    justify-content: space-evenly;
+}
+.info_user{
+    background-color: #191D21;
+    width: 40vw;
+    height: 15vw;    
+    box-shadow: black 14px 14px 8px 4px;
+}
+.log_email{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: 'Comfortaa', cursive;
+    gap: 2vw;
+    padding-top: 5vw;
+    align-items: center;
+}
+.ava{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: #938C8C;
+}
+.logout{
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+    border: 2px solid #9FC926;
+    padding: 0.5vw;
+}
+.logout:hover{
+    background-color: #9FC926;
+    color: #191D21;
+    transition-duration: 0.5s;
+}
+.avatar_logout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.avatar_logout p{
+    font-size: 1.7rem;
+    color: white;
+}
+/*ОБРАТНАЯ СВЯЗЬ*/
+h3{
+    color: white;
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 8vw 0  4vw 0;
+    font-family: 'Comfortaa', cursive;
+}
+h3 span{
+    color: #9FC926;
+}
+.form_out{
+    display: flex;
+    justify-content: center;
+}
+form textarea{
+    background-color: transparent;
+    color: white;
+    font-size: 1.2vw;
+    font-family: 'Philosopher', sans-serif;
+    border: #9FC926 2px solid;
+    resize: none;
+    outline: none;
+}
+textarea::-webkit-scrollbar {
+    width: 12px;               
+  }
+  textarea::-webkit-scrollbar-track {
+    background: #9FC926;        
+  }
+  textarea::-webkit-scrollbar-thumb {
+    background-color: #191D21;    
+    border-radius: 20px;       
+    border: 3px solid #9FC926;  
+  }
+form button{
+    width: 25vw;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2vw;
+    font-family: 'Philosopher', sans-serif;
+    border: #9FC926 2px solid;
+    margin-top: 5vh;
+}
+form button:hover{
+    background-color:#9FC926;
+    color: #191D21;
+    transition-duration: 0.5s;
+}
+ form{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    flex-direction: column;
+    justify-content: center;
+ }   
+/*ОБРАТНАЯ СВЯЗЬ*/
+
+/*Footer*/
+.navigation_footer{
+    display: flex;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 1.5vw;
+    font-family: 'Comfortaa', cursive;
+}
+footer{
+    height: 100%;
+    background-color: #191D21;
+    border-top: #9FC926 2px solid;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .navigation_footer{
+    padding-top: 5vh;
+    width: 100%;
+}
+footer a{     
+    color: #938C8C;
+    font-size: 1.2vw;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 2.5vh;
+}
+.cop{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2vw;
+    border-top: #938C8C 2px solid;
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+/*Footer*/
