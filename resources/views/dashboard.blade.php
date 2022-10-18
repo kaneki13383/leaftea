@@ -18,7 +18,7 @@
 <section>
     <div class="info_about">
         <div class="avatar_logout">
-            <div class="ava"></div>
+            <img class="ava" src="storage/{{Auth::user()->avatar}}">
             <p>{{ Auth::user()->name }}</p>
             <form method="POST" action="{{ route('logout') }}">
                 @csrf

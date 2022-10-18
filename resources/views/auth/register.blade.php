@@ -23,7 +23,7 @@
             <!-- Validation Errors -->
             <div class="form">
                 
-                <form method="POST" action="{{ route('register') }}">
+                <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                     
                 @csrf
 
@@ -37,8 +37,13 @@
                      </div>
 
                     <!-- Email Address -->
-                     <div class="info_email">
-                     <x-input id="email" class="block mt-1 w-full" type="email" name="email" placeholder="Введите почту" :value="old('email')" required />
+                    <div class="info_email">
+                        <x-input id="email" class="block mt-1 w-full" type="email" name="email" placeholder="Введите почту" :value="old('email')" required />
+                    </div>
+
+                    <!-- Avatar -->
+                    <div class="info_avatar">
+                        <input id="avatar" type="file" name="avatar" placeholder="Вставьте картинку" required>
                     </div>
 
                     <!-- Password -->
@@ -66,7 +71,8 @@
                     <a class="info_link_text">
                             {{ __('Политика конфиденциальности') }}
                         </a>
-                    </div>
+                    </div>                    
+        <x-auth-validation-errors class="mb-4" :errors="$errors" />
                 </form>
             </div>
         </x-auth-card>

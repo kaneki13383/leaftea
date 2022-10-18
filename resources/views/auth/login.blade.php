@@ -24,7 +24,7 @@
         <x-auth-session-status class="mb-4" :status="session('status')" />
 
         <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+        
         {{ csrf_field() }}
         <div class="centered">
         <form method="POST" action="{{ route('login') }}">
@@ -68,6 +68,7 @@
                     <span class="ml-2 text-sm text-gray-600">{{ __('Запомнить меня') }}</span>
                 </label>
             </div>
+                <x-auth-validation-errors class="mb-4" :errors="$errors" />
         </form>
         </div>
     </x-auth-card>
