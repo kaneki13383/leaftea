@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChangeAvatar;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,8 @@ Route::get('/catalog', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+
 Route::get('/dashboard', function () {
     $user = auth()->user(); 
     return view('dashboard', ['user' => $user]);

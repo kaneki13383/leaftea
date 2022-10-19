@@ -33,6 +33,11 @@
             <div class="log_email">
                 <p>Логин: {{ Auth::user()->name }}</p>
                 <p>E-mail: {{ Auth::user()->email }}</p>
+                <form action="{{ route('avatar-update') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <input id="avatar" type="file" name="avatar">
+                    <input type="submit" value="Изменить">
+                </form>
             </div>
         </div>
     </div>

@@ -43,7 +43,7 @@
 
                     <!-- Avatar -->
                     <div class="info_avatar">
-                        <input id="avatar" type="file" name="avatar" placeholder="Вставьте картинку" required>
+                        <input id="avatar" type="file" name="avatar" placeholder="Вставьте картинку">
                     </div>
 
                     <!-- Password -->
