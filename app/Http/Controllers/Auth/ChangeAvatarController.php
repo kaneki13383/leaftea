@@ -26,7 +26,6 @@ class ChangeAvatarController extends Controller
             ->where('id', $user)
             ->update(['avatar' => $path]);    
 
-        
         return redirect(RouteServiceProvider::HOME);
     }
 }

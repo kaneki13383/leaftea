@@ -27,7 +27,7 @@ header{
 .info_user{
     background-color: #191D21;
     width: 40vw;
-    height: 15vw;    
+    height: 20vw;    
     box-shadow: black 14px 14px 8px 4px;
 }
 .log_email{
@@ -45,6 +45,7 @@ header{
     height: 10vw;
     border-radius: 50%;
     background-color: #938C8C;
+    box-shadow: #9FC926 0px 0px 20px 3px;
 }
 .logout{
     font-size: 1.5rem;
@@ -118,13 +119,37 @@ form button:hover{
     color: #191D21;
     transition-duration: 0.5s;
 }
- form{
+form{
     display: flex;
     align-items: center;
     gap: 1vw;
     flex-direction: column;
     justify-content: center;
  }   
+.uploudbtn{
+    width: 20vw;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2vw;
+    font-family: 'Philosopher', sans-serif;
+    border: #9FC926 2px solid;
+    margin-top: -0.5vw;
+}
+.uploudbtn:hover{
+    background-color: #9FC926;
+    color: #191D21;
+    transition-duration: 0.5s;
+}
+.uploudimg{
+    font-size: 1.2rem;
+    font-family: 'Comfortaa', cursive;
+}
+.change_avatar{
+    display: flex;
+    gap: 2vw;
+}
+ 
 /*ОБРАТНАЯ СВЯЗЬ*/
 
 /*Footer*/
